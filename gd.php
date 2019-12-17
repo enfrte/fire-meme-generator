@@ -8,8 +8,8 @@ elseif (!empty($_FILES['file']['tmp_name'])) {
 	$bgImgPath = $_FILES['file']['tmp_name'];
 }
 else {
-	//require 'index.php'; // load the user form
-	//die();
+	require 'index.php'; // load the user form
+	die();
 }
 //$bgImgPath = "something_burning.jpg";
 
