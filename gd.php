@@ -44,7 +44,7 @@ function image_background_dimentions($background_width, $img_width, $img_height)
 
 $manImageDimentions = image_background_dimentions($bgImageWidth, $youngManImageWidth, $youngManImageHeight);
 //print_r($manImageDimentions);
-imagecopyresized($bgImg, $youngMan, (($bgImageWidth - $manImageDimentions['width']) + 1), (($bgImageHeight - $manImageDimentions['height']) + 1), 0, 0, $manImageDimentions['width'], $manImageDimentions['height'], $youngManImageWidth, $youngManImageHeight);
+imagecopyresized($bgImg, $youngMan, (int)(($bgImageWidth - $manImageDimentions['width']) + 1), (int)(($bgImageHeight - $manImageDimentions['height']) + 1), 0, 0, (int)$manImageDimentions['width'], (int)$manImageDimentions['height'], $youngManImageWidth, $youngManImageHeight);
 //imagecopy($bgImg, $youngMan, 0, 0, 100, 0, $bgImageWidth, $bgImageHeight);
 
 // prepare caption
